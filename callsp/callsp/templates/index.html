@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Call Stored Procedure</title>
+</head>
+<body>
+
+<h1>How to call stored procedure</h1>
+<h2>Python Django Web Framework</h2>
+<p>This is a paragraph.</p>
+
+
+<table>
+    <tr>
+      <th>Employee Id</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>Email</th>
+    </tr>
+   
+      {%  for display in getempdetails %}
+      <tr>
+      <td>{{ display.0}}</td>
+        <td>{{ display.1}}</td>
+        <td>{{ display.2}}</td>
+        <td>{{ display.3}}</td>
+      </tr>
+      {%  endfor %}
+   
+</table>
+</body>
+</html>
